@@ -11,9 +11,9 @@ export function PageLayout(){
     return(<>
 
 
-  <div className='bg-pink-300 flex justify-center h-screen flex-col' >
+  <div className='bg-pink-500 flex justify-center h-screen flex-col' >
 
-  <div className='m-5  size-11/12 flex flex-col'>
+  <div className='m-auto  p-5 size-11/12 flex flex-col justify-center'>
         <div className=' flex '>
         <DSHeader/>
 
@@ -25,27 +25,24 @@ export function PageLayout(){
 
 
 {/* side bar design  */}
-        <div className='flex flex-row  m-3  gap-x-2'>
 
 
-            <div className=' flex  left-0  size-5/12 flex-col columns-8'>
-           
-                <SideHeader/>
+<div className='bg-sky-500 mx-6 h-screen grid grid-rows-3 grid-flow-col gap-4'>
+    <div className=' bg-red-300 rounded-lg row-span-2'>
+    <SideHeader/>
+    </div>
+    <div className='bg-yellow-300 row-span-6 rounded-lg col-span-3 size-full'>
+        <ContentBody/>
+    </div>
 
-            
-                
+
+</div>
+
+
 
      
-            </div>
-            
-
-            <div className='size-full'>
-            <ContentBody/>
-
-            </div>
-           
-
-        </div>
+        
+       
 
     
     </div>
