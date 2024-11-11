@@ -13,5 +13,5 @@ export function ContentBody(){
             </Skeleton>
         )
     }
-    return <div><Outlet/></div>
+    return <div className="flex justify-center items-center"><Outlet/></div>
 }

@@ -2,7 +2,7 @@ import { atom } from "recoil";
 
 export const Loading = atom({
     key:"Loading",
-    default:"false"
+    default:""
 });
 
 export const Theme =atom({
