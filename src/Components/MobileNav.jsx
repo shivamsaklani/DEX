@@ -1,7 +1,7 @@
-export function MobileNav(){
+export function MobileNav({children}){
     return(
-        <div>
-           
+        <div className="bg-red-300 px-3 rounded-md ">
+           {children}
 
         </div>
     )
