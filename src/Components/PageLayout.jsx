@@ -10,7 +10,7 @@ export function PageLayout(){
     return(<>
 
 
-  <div className='bg-gradient-to-b from-sky-700 to-[#0097b2] flex justify-center h-screen flex-col' >
+  <div className='bg-gradient-to-bl from-teal-500 from-20% via-[#0097b2] via-50% dark:bg-black flex justify-center h-screen flex-col' >
 
   <div className='mb-3 mx-auto size-11/12 flex flex-col justify-center'>
         <div className=' flex '>
@@ -26,9 +26,9 @@ export function PageLayout(){
 {/* side bar design  */}
 
 
-<div className=' mx-6 h-screen grid grid-rows-3 grid-flow-col gap-4'>
+<div className='flex h-screen justify-center items-center size-full '>
     
-    <div className=' row-span-6 rounded-lg col-span-3 size-full'>
+    <div className=' rounded-lg items-center justify-center size-full'>
         <ContentBody/>
     </div>
 
@@ -43,7 +43,11 @@ export function PageLayout(){
 
     
     </div>
+    <div className='justify-center'>
     <MobileBottom/>
+
+    </div>
+    
 
   </div>
    

@@ -7,6 +7,6 @@ export const Loading = atom({
 
 export const Theme =atom({
     key:"Theme",
-    default:"light"
+    default:"dark"
 })
 

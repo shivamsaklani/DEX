@@ -2,19 +2,20 @@
 import { Link } from 'react-router-dom';
 import '../App.css';
 import { Button } from './ui/button';
-import { Switch } from '@radix-ui/themes';
+import ThemeToggle from './DarkMode';
+import { NavIcon } from './NavIcon';
 export function DSHeader(){
     return(
         <div className=" p-5  w-full items-center flex justify-between">
 
 <div className='flex gap-20'>
-<Link to="/home" className='font-logo text-4xl'>DEX</Link>
-            <div className='rounded-3xl py-2 px-3 hidden sm:flex  gap-4'>
-               <Link to="/swap">Swap </Link>
-               <Link to="portfolio">Portfolio</Link>
-               <Link to="pool">Pool</Link>
-               <Link to="send">Send</Link>
-               <Link to="receive">Receive</Link>
+<Link to="/home" className='font-logo py-3 text-4xl bg-clip-text text-transparent bg-gradient-to-tr from-black to-blue-500 '>DEX</Link>
+            <div className='rounded-3xl py-2 px-3 hidden md:flex  gap-4'>
+              <Link className='bg-light' to="/swap"> <NavIcon>Swap</NavIcon> </Link>
+              <Link to="portfolio"><NavIcon>Portfolio</NavIcon></Link>
+              <Link to="pool"> <NavIcon>Pool</NavIcon></Link> 
+               <Link to="send"><NavIcon>Send</NavIcon></Link>
+               <Link to="receive"><NavIcon>Receive</NavIcon></Link>
 
 
 
@@ -22,8 +23,8 @@ export function DSHeader(){
 
 </div>
            
-                    <div className='flex flex-row items-center '>
-<Switch color='orange' defaultChecked/>
+                    <div className='flex flex-row items-center gap-3 '>
+<ThemeToggle/>
             <div className='flex justify-center gap-4'>
             
             <Button className='hidden sm:flex'>Connect</Button>
