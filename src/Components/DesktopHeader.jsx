@@ -26,8 +26,12 @@ export function DSHeader(){
                     <div className='flex flex-row items-center gap-3 '>
 <ThemeToggle/>
             <div className='flex justify-center gap-4'>
+
+                
+                
             
             <Button className='hidden sm:flex'>Connect</Button>
+            
             </div>
             
 
