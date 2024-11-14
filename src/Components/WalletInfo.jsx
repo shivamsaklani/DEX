@@ -28,14 +28,14 @@ export function WalletInfo(){
     }
     return (
         <div className='m-3 flex justify-between  p-3'>
-            <div className='flex flex-col font-Content'>
+            <div className='flex flex-col text-Content font-Content'>
                Wallet Address
                <span>
                 dklajflaskjdf;laksj
                </span>
 
             </div>
-            <div className='flex flex-col font-Content'>
+            <div className='flex flex-col text-Content font-Content'>
                 Amount
                 <span>
                     100

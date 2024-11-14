@@ -18,7 +18,8 @@ export default {
 			'Heading':["Raleway"]
 		  },
 		  boxShadow: {
-			'box': '6 35px 60px 15px rgba(20, 1, 0, 0.3)',
+			'box': '0 1px 1px 1px rgba(0,0,0,0.3)',
+			'mainbox':'0 35px 60px -15px rgba(162, 89, 255, 0.5)'
 		  },
   		borderRadius: {
   			lg: 'var(--radius)',
@@ -30,8 +31,13 @@ export default {
 				Heading:'400'
 		},
   		colors: {
+			Background:'hsl(240, 33, 28)',
+			Secondary:'hsl(240, 33, 18)',
+			other:'hsl(78, 75, 59)',
   			sidebar: {
   				DEFAULT: 'hsl(var(--sidebar-background))',
+			
+				BoxBorder:'',
   				foreground: 'hsl(var(--sidebar-foreground))',
   				primary: 'hsl(var(--sidebar-primary))',
   				'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
@@ -40,7 +46,8 @@ export default {
   				border: 'hsl(var(--sidebar-border))',
   				ring: 'hsl(var(--sidebar-ring))'
   			},
-		   Content:'hsl(176, 100%, 100%)'
+		   Content:'hsl(0, 4, 74)',
+		   TextColor:'hsl(0,0,100)'
 		
   		}
   	}

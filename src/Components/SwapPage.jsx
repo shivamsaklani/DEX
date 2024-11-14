@@ -5,7 +5,7 @@ import coin from '../assets/DEX.png';
 
 export function SwapPage() {
     return (
-        <div className="flex flex-col items-center justify-center p-5">
+        <div className="flex flex-col items-center justify-center">
             {/* Header Section */}
             <div className="flex w-full max-w-md justify-between mb-5">
                 <div className="text-white font-Content text-lg">
@@ -17,12 +17,16 @@ export function SwapPage() {
             </div>
 
             {/* Card Section */}
-            <Container className="bg-gray-800 shadow-box w-full max-w-md rounded-lg p-5 space-y-4">
+            <Container className="bg-Secondary  shadow-mainbox w-full max-w-md rounded-lg p-3 space-y-4">
                 <SwapBox coins="SDOGE" title="From" Icon={coin} />
+                <div className="justify-center flex items-center">
+                        <p className="text-Content">V</p>
+
+                    </div>
                 <SwapBox coins="TAPES" title="To" Icon={coin} />
 
                 {/* Alert Message */}
-                <div className="rounded bg-gray-600 mb-3 text-white text-center p-3">
+                <div className="rounded  hidden bg-gray-600 mb-3  text-white text-center p-3">
                     Alert
                 </div>
 

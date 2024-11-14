@@ -10,8 +10,8 @@ export function DSHeader(){
 
 <div className='flex gap-20'>
 <Link to="/home" className='font-logo py-3 text-4xl bg-clip-text text-transparent bg-gradient-to-tr from-black to-blue-500 '>DEX</Link>
-            <div className='rounded-3xl py-2 px-3 hidden md:flex  gap-4'>
-              <Link className='bg-light' to="/swap"> <NavIcon>Swap</NavIcon> </Link>
+            <div className='rounded-3xl py-2 px-3 hidden md:flex  text-Content gap-4'>
+              <Link to="/swap"> <NavIcon>Swap</NavIcon> </Link>
               <Link to="portfolio"><NavIcon>Portfolio</NavIcon></Link>
               <Link to="pool"> <NavIcon>Pool</NavIcon></Link> 
                <Link to="send"><NavIcon>Send</NavIcon></Link>
