@@ -1,12 +1,12 @@
 
 import { Link } from 'react-router-dom';
 import '../App.css';
-import { Button } from './ui/button';
 import ThemeToggle from './DarkMode';
 import { NavIcon } from './NavIcon';
+import { WalletModalProvider, WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 export function DSHeader(){
     return(
-        <div className=" p-5  w-full items-center flex justify-between">
+        <div className=" p-5 mt-3 relative sm:mt-0  w-full flex justify-between">
 
 <div className='flex gap-20'>
 <Link to="/home" className='font-logo py-3 text-4xl bg-clip-text text-transparent bg-gradient-to-tr from-black to-blue-500 '>DEX</Link>
@@ -30,7 +30,14 @@ export function DSHeader(){
                 
                 
             
-            <Button className='hidden sm:flex'>Connect</Button>
+            <WalletModalProvider>
+           
+    
+                <WalletMultiButton/>
+           
+         
+            </WalletModalProvider>
+        
             
             </div>
             

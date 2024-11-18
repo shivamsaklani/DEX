@@ -13,5 +13,5 @@ export function ContentBody(){
             </Skeleton>
         )
     }
-    return <div className=" size-full items-center"><Outlet/></div>
+    return <div><Outlet/></div>
 }

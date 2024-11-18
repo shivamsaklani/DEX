@@ -1,3 +1,5 @@
+import { Heading } from 'lucide-react';
+
 /** @type {import('tailwindcss').Config} */
 export default {
     darkMode: 'class',
@@ -5,6 +7,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+ 
   theme: {
   	extend: {
 		fontFamily: {
@@ -31,9 +34,11 @@ export default {
 				Heading:'400'
 		},
   		colors: {
-			Background:'hsl(240, 33, 28)',
-			Secondary:'hsl(240, 33, 18)',
-			other:'hsl(78, 75, 59)',
+			Background:'hsl(243, 34, 35)',
+			Secondary:'hsl(240, 1, 17)',
+			other:'hsl(240, 18, 20)',
+			Heading:'hsl(0, 0, 100)',
+
   			sidebar: {
   				DEFAULT: 'hsl(var(--sidebar-background))',
 			
@@ -46,8 +51,7 @@ export default {
   				border: 'hsl(var(--sidebar-border))',
   				ring: 'hsl(var(--sidebar-ring))'
   			},
-		   Content:'hsl(0, 4, 74)',
-		   TextColor:'hsl(0,0,100)'
+		   Content:'hsl(176, 100%, 100%)'
 		
   		}
   	}

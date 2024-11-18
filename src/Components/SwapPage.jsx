@@ -6,6 +6,7 @@ import coin from '../assets/DEX.png';
 export function SwapPage() {
     return (
         <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
             {/* Header Section */}
             <div className="flex w-full max-w-md justify-between mb-5">
                 <div className="text-white font-Content text-lg">
@@ -35,6 +36,7 @@ export function SwapPage() {
                     <Button>Swap</Button>
                 </div>
             </Container>
+       </div>
         </div>
     );
 }

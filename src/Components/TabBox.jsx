@@ -10,23 +10,23 @@ export function TabBox({ tab1, tab2, child1, child2 }) {
 
     return (
         <Tabs
-            className="bg-Background w-full rounded-lg mb-3 p-4 shadow-md"
+            className="bg-Secondary w-full rounded-lg mb-3 shadow-md"
             value={activeTab}
             onValueChange={handleTabChange}
         >
             {/* Tabs List */}
-            <TabsList className="flex justify-center space-x-4 mb-4 border-b border-gray-300 pb-2">
+            <TabsList className="flex justify-center  ">
                 <TabsTrigger
-                    className={`px-4 py-2 rounded-t-md font-medium ${
-                        activeTab === "tab1" ? "bg-Content text-white" : "bg-gray-200 text-gray-700"
+                    className={`py-2 size-full rounded-tr-2xl  font-medium ${
+                        activeTab === "tab1" ? "bg-other text-Content" : "bg-gray-200 text-gray-700"
                     }`}
                     value="tab1"
                 >
                     {tab1}
                 </TabsTrigger>
                 <TabsTrigger
-                    className={`px-4 py-2 rounded-t-md font-medium ${
-                        activeTab === "tab2" ? "bg-Content text-white" : "bg-gray-200 text-gray-700"
+                    className={` py-2 size-full rounded-tl-2xl font-medium ${
+                        activeTab === "tab2" ? "bg-other text-Content" : "bg-gray-200 text-gray-700"
                     }`}
                     value="tab2"
                 >
@@ -35,7 +35,7 @@ export function TabBox({ tab1, tab2, child1, child2 }) {
             </TabsList>
             
             {/* Tabs Content */}
-            <div className="p-6 rounded-b-md bg-Content text-gray-900">
+            <div className="p-6 rounded-b-md bg-other text-gray-900">
                 <TabsContent
                     className="flex justify-center items-center w-full"
                     value="tab1"
