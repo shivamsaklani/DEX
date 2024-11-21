@@ -1,12 +1,21 @@
-import { useRecoilState } from 'recoil';
-import { Theme } from './Global/GlobalVar';
+import { useState, useEffect } from 'react';
 
 const ThemeToggle = () => {
-  const [theme, setTheme] = useRecoilState(Theme);
+  const [theme, setTheme] = useState(() => {
+    // Initialize theme from localStorage
+    return localStorage.getItem("mode") || "dark";
+  });
+
+  useEffect(() => {
+    // Update the `root` element class and save to localStorage
+    const root = document.getElementById('root');
+    root.classList.remove("light", "dark"); // Remove any existing theme classes
+    root.classList.add(theme); // Add the new theme class
+    localStorage.setItem("mode", theme);
+  }, [theme]);
 
   const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
-    
+    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
   };
 
   return (

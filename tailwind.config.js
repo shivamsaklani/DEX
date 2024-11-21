@@ -22,7 +22,7 @@ export default {
 		  },
 		  boxShadow: {
 			'box': '0 1px 1px 1px rgba(0,0,0,0.3)',
-			'mainbox':'0 35px 60px -15px rgba(162, 89, 255, 0.5)'
+			'mainbox':'0 -10px 50px 0px rgba(162, 89, 255, 0.5) '
 		  },
   		borderRadius: {
   			lg: 'var(--radius)',
@@ -34,8 +34,8 @@ export default {
 				Heading:'400'
 		},
   		colors: {
-			Background:'hsl(243, 34, 35)',
-			Secondary:'hsl(240, 1, 17)',
+			Secondary:'hsl(243, 34, 30)',
+			Primary:'hsl(240, 1, 17)',
 			other:'hsl(240, 18, 20)',
 			Heading:'hsl(0, 0, 100)',
 
